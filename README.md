@@ -451,7 +451,7 @@
             border: 1px solid #f87171;
         }
 
-        /* ─── PSEUDOCODE STYLING ─── */
+        /* ─── PSEUDOCODE STYLING - DIPERBAIKI UNTUK VISIBILITY ─── */
         .pseudocode-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -460,22 +460,37 @@
         }
 
         .pseudocode-box {
-            background: rgba(2, 6, 23, 0.8);
+            background: #0a0a1a;
             border-radius: 8px;
-            padding: 16px 18px;
-            border-left: 4px solid #fbbf24;
+            padding: 18px 20px;
+            border-left: 5px solid #fbbf24;
             font-family: 'Courier New', monospace;
-            font-size: 0.75em;
-            color: #cbd5e1;
-            line-height: 1.8;
+            font-size: 0.8em;
+            color: #e2e8f0;
+            line-height: 2;
             overflow-x: auto;
+            border: 1px solid #2d3748;
         }
 
         .pseudocode-box h5 {
             color: #fbbf24;
             font-size: 1.1em;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
+            font-weight: bold;
+            border-bottom: 1px solid #2d3748;
+            padding-bottom: 8px;
+        }
+
+        .pseudocode-box pre {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 2;
+            color: #e2e8f0;
+            white-space: pre-wrap;
+            word-break: break-word;
         }
 
         .pseudocode-box .keyword {
@@ -485,19 +500,83 @@
 
         .pseudocode-box .input {
             color: #818cf8;
+            font-weight: bold;
         }
 
         .pseudocode-box .output {
             color: #34d399;
+            font-weight: bold;
         }
 
         .pseudocode-box .error {
             color: #f87171;
+            font-weight: bold;
         }
 
         .pseudocode-box .comment {
             color: #64748b;
             font-style: italic;
+        }
+
+        .pseudocode-box .variable {
+            color: #e2e8f0;
+        }
+
+        .pseudocode-box .operator {
+            color: #f472b6;
+        }
+
+        .pseudocode-box .number {
+            color: #fb923c;
+        }
+
+        /* Pseudocode dengan latar belakang terang untuk GitHub */
+        .pseudocode-box-light {
+            background: #f8f9fa;
+            border-left: 5px solid #fbbf24;
+            border: 1px solid #dee2e6;
+            color: #1a202c;
+        }
+
+        .pseudocode-box-light h5 {
+            color: #d69e2e;
+            border-bottom-color: #dee2e6;
+        }
+
+        .pseudocode-box-light pre {
+            color: #1a202c;
+        }
+
+        .pseudocode-box-light .keyword {
+            color: #d69e2e;
+        }
+
+        .pseudocode-box-light .input {
+            color: #4a6cf7;
+        }
+
+        .pseudocode-box-light .output {
+            color: #38a169;
+        }
+
+        .pseudocode-box-light .error {
+            color: #e53e3e;
+        }
+
+        .pseudocode-box-light .comment {
+            color: #718096;
+        }
+
+        .pseudocode-box-light .variable {
+            color: #1a202c;
+        }
+
+        .pseudocode-box-light .operator {
+            color: #d53f8c;
+        }
+
+        .pseudocode-box-light .number {
+            color: #dd6b20;
         }
 
         /* ─── SOURCE CODE STYLING ─── */
@@ -515,13 +594,6 @@
             color: #cbd5e1;
             white-space: pre-wrap;
             word-break: break-word;
-        }
-
-        .source-code-container .line-number {
-            display: inline-block;
-            width: 30px;
-            color: #475569;
-            user-select: none;
         }
 
         .source-code-container .keyword {
@@ -568,6 +640,10 @@
 
         .source-code-container .function {
             color: #facc15;
+        }
+
+        .source-code-container .annotation {
+            color: #f472b6;
         }
 
         @media (max-width: 768px) {
@@ -957,12 +1033,14 @@
             </div>
 
             <!-- PSEUDOCODE LENGKAP -->
-            <div style="margin-top:20px; background:rgba(2,6,23,0.6); border-radius:8px; padding:16px; border-left:3px solid #fbbf24;">
-                <h4 style="color:#fbbf24; font-size:0.9em;">PSEUDOCODE LENGKAP</h4>
+            <div style="margin-top:20px; background:rgba(2,6,23,0.8); border-radius:8px; padding:20px; border-left:3px solid #fbbf24; border:1px solid #2d3748;">
+                <h4 style="color:#fbbf24; font-size:0.9em; margin-bottom:12px;">PSEUDOCODE LENGKAP</h4>
                 <div class="pseudocode-container">
+                    <!-- Tambah Stok -->
                     <div class="pseudocode-box" style="border-left-color:#34d399;">
                         <h5 style="color:#34d399;">Tambah Stok</h5>
-                        <pre><span class="keyword">ALGORITMA</span> TambahStok
+                        <pre>
+<span class="keyword">ALGORITMA</span> TambahStok
     <span class="input">INPUT:</span> kode, jumlah
     
     <span class="keyword">IF</span> barang tidak ditemukan <span class="keyword">THEN</span>
@@ -975,15 +1053,18 @@
         <span class="keyword">RETURN</span> <span class="keyword">false</span>
     <span class="keyword">END IF</span>
     
-    barang.jumlahStok += jumlah
+    <span class="variable">barang.jumlahStok</span> <span class="operator">+=</span> jumlah
     catat riwayat transaksi
     <span class="output">OUTPUT "Sukses - Stok bertambah"</span>
-    <span class="keyword">RETURN</span> <span class="keyword">true</span></pre>
+    <span class="keyword">RETURN</span> <span class="keyword">true</span>
+                        </pre>
                     </div>
 
+                    <!-- Kurangi Stok -->
                     <div class="pseudocode-box" style="border-left-color:#f87171;">
                         <h5 style="color:#f87171;">Kurangi Stok</h5>
-                        <pre><span class="keyword">ALGORITMA</span> KurangiStok
+                        <pre>
+<span class="keyword">ALGORITMA</span> KurangiStok
     <span class="input">INPUT:</span> kode, jumlah
     
     <span class="keyword">IF</span> barang tidak ditemukan <span class="keyword">THEN</span>
@@ -1001,11 +1082,23 @@
         <span class="keyword">RETURN</span> <span class="keyword">false</span>
     <span class="keyword">END IF</span>
     
-    barang.jumlahStok -= jumlah
+    <span class="variable">barang.jumlahStok</span> <span class="operator">-=</span> jumlah
     catat riwayat transaksi
     <span class="output">OUTPUT "Sukses - Stok berkurang"</span>
-    <span class="keyword">RETURN</span> <span class="keyword">true</span></pre>
+    <span class="keyword">RETURN</span> <span class="keyword">true</span>
+                        </pre>
                     </div>
+                </div>
+                
+                <!-- Keterangan -->
+                <div style="margin-top:16px; padding:12px 16px; background:rgba(251,191,36,0.05); border-radius:8px; border-left:3px solid #fbbf24;">
+                    <p style="font-size:0.85em; color:#cbd5e1;">
+                        <strong style="color:#fbbf24;">Keterangan:</strong> 
+                        Kedua algoritma di atas menerapkan prinsip <strong style="color:#34d399;">validasi input</strong> 
+                        dan <strong style="color:#818cf8;">pencatatan riwayat</strong> transaksi. 
+                        Operasi <span style="color:#34d399;">Tambah Stok</span> hanya memerlukan barang tersedia dan jumlah > 0, 
+                        sedangkan <span style="color:#f87171;">Kurangi Stok</span> juga memeriksa kecukupan stok sebelum dikurangi.
+                    </p>
                 </div>
             </div>
         </div>
