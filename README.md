@@ -451,7 +451,7 @@
             border: 1px solid #f87171;
         }
 
-        /* ─── PSEUDOCODE STYLING - DIPERBAIKI UNTUK VISIBILITY ─── */
+        /* ─── PSEUDOCODE STYLING - DIPERBAIKI UNTUK GITHUB ─── */
         .pseudocode-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -487,7 +487,7 @@
             padding: 0;
             font-family: 'Courier New', monospace;
             font-size: 0.9em;
-            line-height: 2;
+            line-height: 2.2;
             color: #e6edf3;
             white-space: pre-wrap;
             word-break: break-word;
