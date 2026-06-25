@@ -451,7 +451,7 @@
             border: 1px solid #f87171;
         }
 
-        /* ─── PSEUDOCODE STYLING - DIPERBAIKI UNTUK GITHUB ─── */
+        /* ─── PSEUDOCODE STYLING - DIPERBAIKI UNTUK GITHUB DARK ─── */
         .pseudocode-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -460,16 +460,16 @@
         }
 
         .pseudocode-box {
-            background: #0d1117;
+            background: #0d1117;  /* GitHub Dark background */
             border-radius: 8px;
             padding: 18px 20px;
             border-left: 5px solid #fbbf24;
             font-family: 'Courier New', monospace;
             font-size: 0.8em;
-            color: #e6edf3;
+            color: #e6edf3;  /* GitHub Dark text */
             line-height: 2;
             overflow-x: auto;
-            border: 1px solid #30363d;
+            border: 1px solid #30363d;  /* GitHub Dark border */
         }
 
         .pseudocode-box h5 {
@@ -491,6 +491,7 @@
             color: #e6edf3;
             white-space: pre-wrap;
             word-break: break-word;
+            background: transparent;  /* Pastikan tidak ada background putih */
         }
 
         .pseudocode-box .keyword {
