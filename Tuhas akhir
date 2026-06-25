@@ -460,16 +460,16 @@
         }
 
         .pseudocode-box {
-            background: #0a0a1a;
+            background: #0d1117;
             border-radius: 8px;
             padding: 18px 20px;
             border-left: 5px solid #fbbf24;
             font-family: 'Courier New', monospace;
             font-size: 0.8em;
-            color: #e2e8f0;
+            color: #e6edf3;
             line-height: 2;
             overflow-x: auto;
-            border: 1px solid #2d3748;
+            border: 1px solid #30363d;
         }
 
         .pseudocode-box h5 {
@@ -478,7 +478,7 @@
             margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
             font-weight: bold;
-            border-bottom: 1px solid #2d3748;
+            border-bottom: 1px solid #30363d;
             padding-bottom: 8px;
         }
 
@@ -488,162 +488,113 @@
             font-family: 'Courier New', monospace;
             font-size: 0.9em;
             line-height: 2;
-            color: #e2e8f0;
+            color: #e6edf3;
             white-space: pre-wrap;
             word-break: break-word;
         }
 
         .pseudocode-box .keyword {
-            color: #fbbf24;
+            color: #ffd700;
             font-weight: bold;
         }
 
         .pseudocode-box .input {
-            color: #818cf8;
+            color: #58a6ff;
             font-weight: bold;
         }
 
         .pseudocode-box .output {
-            color: #34d399;
+            color: #3fb950;
             font-weight: bold;
         }
 
         .pseudocode-box .error {
-            color: #f87171;
+            color: #f85149;
             font-weight: bold;
         }
 
         .pseudocode-box .comment {
-            color: #64748b;
+            color: #8b949e;
             font-style: italic;
         }
 
         .pseudocode-box .variable {
-            color: #e2e8f0;
+            color: #e6edf3;
         }
 
         .pseudocode-box .operator {
-            color: #f472b6;
+            color: #f778ba;
         }
 
         .pseudocode-box .number {
-            color: #fb923c;
-        }
-
-        /* Pseudocode dengan latar belakang terang untuk GitHub */
-        .pseudocode-box-light {
-            background: #f8f9fa;
-            border-left: 5px solid #fbbf24;
-            border: 1px solid #dee2e6;
-            color: #1a202c;
-        }
-
-        .pseudocode-box-light h5 {
-            color: #d69e2e;
-            border-bottom-color: #dee2e6;
-        }
-
-        .pseudocode-box-light pre {
-            color: #1a202c;
-        }
-
-        .pseudocode-box-light .keyword {
-            color: #d69e2e;
-        }
-
-        .pseudocode-box-light .input {
-            color: #4a6cf7;
-        }
-
-        .pseudocode-box-light .output {
-            color: #38a169;
-        }
-
-        .pseudocode-box-light .error {
-            color: #e53e3e;
-        }
-
-        .pseudocode-box-light .comment {
-            color: #718096;
-        }
-
-        .pseudocode-box-light .variable {
-            color: #1a202c;
-        }
-
-        .pseudocode-box-light .operator {
-            color: #d53f8c;
-        }
-
-        .pseudocode-box-light .number {
-            color: #dd6b20;
+            color: #d29922;
         }
 
         /* ─── SOURCE CODE STYLING ─── */
         .source-code-container {
-            background: #0a0a1a;
+            background: #0d1117;
             border-radius: 12px;
             padding: 20px;
-            border: 1px solid #38bdf8;
+            border: 1px solid #30363d;
             margin-top: 12px;
             max-height: 600px;
             overflow-y: auto;
             font-family: 'Courier New', monospace;
             font-size: 0.75em;
             line-height: 1.8;
-            color: #cbd5e1;
+            color: #e6edf3;
             white-space: pre-wrap;
             word-break: break-word;
         }
 
         .source-code-container .keyword {
-            color: #818cf8;
+            color: #ff7b72;
             font-weight: bold;
         }
 
         .source-code-container .string {
-            color: #34d399;
+            color: #a5d6ff;
         }
 
         .source-code-container .comment {
-            color: #64748b;
+            color: #8b949e;
             font-style: italic;
         }
 
         .source-code-container .class-name {
-            color: #fbbf24;
+            color: #ffd700;
         }
 
         .source-code-container .method {
-            color: #22d3ee;
+            color: #d2a8ff;
         }
 
         .source-code-container .type {
-            color: #a78bfa;
+            color: #ffa657;
         }
 
         .source-code-container .number {
-            color: #fb923c;
+            color: #d29922;
         }
 
         .source-code-container .operator {
-            color: #f472b6;
+            color: #f778ba;
         }
 
         .source-code-container .punctuation {
-            color: #94a3b8;
+            color: #8b949e;
         }
 
         .source-code-container .variable {
-            color: #e2e8f0;
+            color: #e6edf3;
         }
 
         .source-code-container .function {
-            color: #facc15;
+            color: #d2a8ff;
         }
 
         .source-code-container .annotation {
-            color: #f472b6;
+            color: #f778ba;
         }
 
         @media (max-width: 768px) {
@@ -1032,13 +983,13 @@
                 N --> O["END - SUKSES"]</code>
             </div>
 
-            <!-- PSEUDOCODE LENGKAP -->
-            <div style="margin-top:20px; background:rgba(2,6,23,0.8); border-radius:8px; padding:20px; border-left:3px solid #fbbf24; border:1px solid #2d3748;">
-                <h4 style="color:#fbbf24; font-size:0.9em; margin-bottom:12px;">PSEUDOCODE LENGKAP</h4>
+            <!-- PSEUDOCODE -->
+            <div style="margin-top:20px; background:#0d1117; border-radius:8px; padding:20px; border:1px solid #30363d;">
+                <h4 style="color:#ffd700; font-size:1em; margin-bottom:12px;">PSEUDOCODE</h4>
                 <div class="pseudocode-container">
                     <!-- Tambah Stok -->
-                    <div class="pseudocode-box" style="border-left-color:#34d399;">
-                        <h5 style="color:#34d399;">Tambah Stok</h5>
+                    <div class="pseudocode-box" style="border-left-color:#3fb950;">
+                        <h5 style="color:#3fb950;">Tambah Stok</h5>
                         <pre>
 <span class="keyword">ALGORITMA</span> TambahStok
     <span class="input">INPUT:</span> kode, jumlah
@@ -1061,8 +1012,8 @@
                     </div>
 
                     <!-- Kurangi Stok -->
-                    <div class="pseudocode-box" style="border-left-color:#f87171;">
-                        <h5 style="color:#f87171;">Kurangi Stok</h5>
+                    <div class="pseudocode-box" style="border-left-color:#f85149;">
+                        <h5 style="color:#f85149;">Kurangi Stok</h5>
                         <pre>
 <span class="keyword">ALGORITMA</span> KurangiStok
     <span class="input">INPUT:</span> kode, jumlah
@@ -1091,13 +1042,13 @@
                 </div>
                 
                 <!-- Keterangan -->
-                <div style="margin-top:16px; padding:12px 16px; background:rgba(251,191,36,0.05); border-radius:8px; border-left:3px solid #fbbf24;">
-                    <p style="font-size:0.85em; color:#cbd5e1;">
-                        <strong style="color:#fbbf24;">Keterangan:</strong> 
-                        Kedua algoritma di atas menerapkan prinsip <strong style="color:#34d399;">validasi input</strong> 
-                        dan <strong style="color:#818cf8;">pencatatan riwayat</strong> transaksi. 
-                        Operasi <span style="color:#34d399;">Tambah Stok</span> hanya memerlukan barang tersedia dan jumlah > 0, 
-                        sedangkan <span style="color:#f87171;">Kurangi Stok</span> juga memeriksa kecukupan stok sebelum dikurangi.
+                <div style="margin-top:16px; padding:12px 16px; background:rgba(255,215,0,0.05); border-radius:8px; border-left:3px solid #ffd700;">
+                    <p style="font-size:0.85em; color:#e6edf3;">
+                        <strong style="color:#ffd700;">Keterangan:</strong> 
+                        Kedua algoritma di atas menerapkan prinsip <strong style="color:#3fb950;">validasi input</strong> 
+                        dan <strong style="color:#58a6ff;">pencatatan riwayat</strong> transaksi. 
+                        Operasi <span style="color:#3fb950;">Tambah Stok</span> hanya memerlukan barang tersedia dan jumlah > 0, 
+                        sedangkan <span style="color:#f85149;">Kurangi Stok</span> juga memeriksa kecukupan stok sebelum dikurangi.
                     </p>
                 </div>
             </div>
